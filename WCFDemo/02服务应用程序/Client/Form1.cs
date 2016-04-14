@@ -15,5 +15,12 @@ namespace Client
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Service1Client client = new Service1Client();
+            string message = client.GetData(12312);
+            MessageBox.Show(message);
+        }
     }
 }
